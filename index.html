@@ -1,70 +1,423 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Responsive landing page headphones</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            
-        </header>
 
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                
-            </section>
-            
-            <!--=============== SPONSOR ===============-->
-            <section class="sponsor section">
-                
-            </section>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-            <!--=============== SPECS ===============-->
-            <section class="specs section grid" id="specs">
-                
-            </section>
+    <title>Responsive landing page headphones</title>
+</head>
 
-            <!--=============== CASE ===============-->
-            <section class="case section grid" id="case">
-                
-            </section>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
 
-            <!--=============== DISCOUNT ===============-->
-            <section class="discount section">
-                
-            </section>
+        <nav class="nav container">
+            <a href="" class="nav-logo">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
 
-            <!--=============== PRODUCTS ===============-->
-            <section class="products section" id="products">
-                
-            </section>
-        </main>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer section">
-            
-        </footer>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="active-link nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#specs" class="nav-link">Specs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#case" class="nav-link">Case</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Products</a>
+                    </li>
+                </ul>
 
-        <!--=============== SCROLL UP ===============-->
-        
-        
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+
+            <div class="home-container container grid">
+                <div>
+                    <img src="./assets/img/home.png" alt="" class="home-img">
+                </div>
+
+
+                <div class="home-data">
+                    <div class="home-header">
+                        <h1 class="home-title">On Ear</h1>
+                        <h2 class="home-subtitle">Beats 3</h2>
+                    </div>
+
+
+                    <div class="home-footer">
+                        <h3 class="home-title-desc"> Overview</h3>
+                        <p class="home-desc">
+                            Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined
+                            design with comfortable padded earphones, delivering first-rate playback.
+                        </p>
+
+
+                        <a href="" class="button button--flex">
+                            <span class="button--flex">
+                                <i class="ri-shopping-bag-line button-icon"></i> Add to Bag
+                            </span>
+
+                            <span class="home-price">$399</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--=============== SPONSOR ===============-->
+        <section class="sponsor section">
+
+            <div class="sponsor-container container grid">
+                <img src="./assets/img/sponsor1.png" alt="" class="sponsor-img">
+                <img src="./assets/img/sponsor2.png" alt="" class="sponsor-img">
+                <img src="./assets/img/sponsor3.png" alt="" class="sponsor-img">
+                <img src="./assets/img/sponsor4.png" alt="" class="sponsor-img">
+            </div>
+
+        </section>
+
+        <!--=============== SPECS ===============-->
+        <section class="specs section grid" id="specs">
+
+            <h2 class="section-title section-title-gradient">Specs</h2>
+
+            <div class="specs-container container grid">
+                <div class="specs-content grid">
+                    <div class="specs-data">
+                        <i class="ri-bluetooth-line specs-icon"></i>
+                        <h3 class="specs-title">Connection</h3>
+                        <span class="specs-subtitle">Bluetooth v5.2</span>
+                    </div>
+                    <div class="specs-data">
+                        <i class="ri-battery-charge-line specs-icon"></i>
+                        <h3 class="specs-title">Battery</h3>
+                        <span class="specs-subtitle">Duration 40h</span>
+                    </div>
+                    <div class="specs-data">
+                        <i class="ri-plug-line specs-icon"></i>
+                        <h3 class="specs-title">Load</h3>
+                        <span class="specs-subtitle">Fast charge 4.2-AAC</span>
+                    </div>
+                    <div class="specs-data">
+                        <i class="ri-mic-line specs-icon"></i>
+                        <h3 class="specs-title">Microphone</h3>
+                        <span class="specs-subtitle">Supports Apple Siri <br> and Google</span>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="./assets/img/specs.png" alt="" class="specs-img">
+                </div>
+            </div>
+
+        </section>
+
+        <!--=============== CASE ===============-->
+        <section class="case section grid" id="case">
+
+            <h2 class="section-title section-title-gradient">Case</h2>
+
+
+            <div class="case-container container grid">
+                <div>
+                    <img src="./assets/img/case.png" alt="" class="case-img">
+                </div>
+
+
+                <div class="case-data">
+                    <p class="case-desc">
+                        With a comfortable and adaptable case so that you can store it whenever you want, and keep your
+                        durability forever.
+                    </p>
+
+
+                    <a href="" class="button button--flex">
+                        <i class="ri-information-line button-icon"></i> More info
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section">
+
+
+            <div class="discount-container container grid">
+
+                <div class="discount-animate">
+                    <h2 class="discount-title">Immerse yourself in <br> your music</h2>
+
+                    <p class="discount-desc">
+                        Get it now, up to 50% off.
+                    </p>
+
+                    <a href="" class="button button--flex">
+                        <i class="ri-shopping-bag-line button-icons"></i> Shop Now
+                    </a>
+                </div>
+
+
+                <img src="./assets/img/discount.png" alt="" class="discount-img">
+            </div>
+
+        </section>
+
+        <!--=============== PRODUCTS ===============-->
+        <section class="products section" id="products">
+
+            <h2 class="section-title section-title-gradient products-line">Choose <br> Your Style</h2>
+
+            <div class="products-container container grid">
+
+                <article class="products-cards">
+
+                    <div class="products-content">
+                        <img src="./assets/img/product1.png" alt="" class="product-img">
+                        <h3 class="products-title">
+                            Black
+                        </h3>
+
+                        <span class="products-price">
+                            $399
+                        </span>
+
+
+                        <button class="button button--flex products-button">
+                            <i class="ri-shopping-bag-line button-icon"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="products-cards">
+
+                    <div class="products-content">
+                        <img src="./assets/img/product2.png" alt="" class="product-img">
+                        <h3 class="products-title">
+                            Red Black
+                        </h3>
+
+                        <span class="products-price">
+                            $399
+                        </span>
+
+
+                        <button class="button button--flex products-button">
+                            <i class="ri-shopping-bag-line button-icon"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="products-cards">
+
+                    <div class="products-content">
+                        <img src="./assets/img/product3.png" alt="" class="product-img">
+                        <h3 class="products-title">
+                            Night Black
+                        </h3>
+
+                        <span class="products-price">
+                            $399
+                        </span>
+
+
+                        <button class="button button--flex products-button">
+                            <i class="ri-shopping-bag-line button-icon"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="products-cards">
+
+                    <div class="products-content">
+                        <img src="./assets/img/product4.png" alt="" class="product-img">
+                        <h3 class="products-title">
+                            Blue
+                        </h3>
+
+                        <span class="products-price">
+                            $399
+                        </span>
+
+
+                        <button class="button button--flex products-button">
+                            <i class="ri-shopping-bag-line button-icon"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="products-cards">
+
+                    <div class="products-content">
+                        <img src="./assets/img/product5.png" alt="" class="product-img">
+                        <h3 class="products-title">
+                            Twilight Gray
+                        </h3>
+
+                        <span class="products-price">
+                            $399
+                        </span>
+
+
+                        <button class="button button--flex products-button">
+                            <i class="ri-shopping-bag-line button-icon"></i>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+
+
+        <div class="footer-container container grid">
+            <a href="" class="footer-logo">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+
+
+
+            <div class="footer-content">
+                <h3 class="footer-title">
+                    Products
+                </h3>
+
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="" class="footer-links">Headphones</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Earphones</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Earbuds</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-content">
+                <h3 class="footer-title">
+                    Support
+                </h3>
+
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="" class="footer-links">Product help</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Register</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Updates</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer-links">Provides</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-content">
+                <form class="footer-form">
+                    <input type="email" placeholder="Email" name="" id="" class="footer-input">
+                    <button class="button button--flex">
+                        <i class="ri-send-plane-line button-icon"></i> Subscribe
+                    </button>
+                </form>
+
+
+
+                <div class="footer-socials">
+                    <a href="" class="footer-social-link"><i class="ri-facebook-fill"></i></a>
+                    <a href="" class="footer-social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="" class="footer-social-link"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="footer-copy">
+            <a href="" class="footer-copy-link" target="_blank">
+                &#169; Bedimcode. All right reserved
+            </a>
+        </p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+
+    <a href="#home" id="scroll-up" class="scroll-up">
+        <i class="ri-arrow-up-s-line scroll-icon"></i>
+    </a>
+
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
